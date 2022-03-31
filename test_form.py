@@ -11,7 +11,6 @@ def setUp():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
     yield
-    time.sleep(5)
     driver.close()
 
 def test_form(setUp):
